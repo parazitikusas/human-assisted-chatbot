@@ -1,0 +1,154 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: #f4f4f4;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.status-bar {
+  font-size: 0.9em;
+  color: #666;
+  background-color: #efefef;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.error-message {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  border: 1px solid #D8000C;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.main-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.history-panel, .review-panel {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.history-panel h2, .review-panel h2 {
+  margin-top: 0;
+}
+
+.message-list {
+  height: 400px; /* Or adjust as needed */
+  overflow-y: auto;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.user {
+  background-color: #e1f5fe;
+  align-self: flex-start; /* Or adjust alignment */
+}
+
+.message.assistant {
+  background-color: #f1f8e9;
+  align-self: flex-start;
+}
+
+.message .author {
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #555;
+  text-transform: capitalize;
+}
+
+
+.message .content {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  color: black;
+}
+
+.message .timestamp {
+  font-size: 0.75em;
+  color: #999;
+  text-align: right;
+}
+
+.review-box textarea {
+  width: 95%; /* Allow for padding */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.review-box button, .history-panel button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.review-box button:disabled, .history-panel button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.review-box button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.original-bot-message {
+  background-color: #fffacd; /* Light yellow */
+  padding: 8px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  margin: 5px 0 15px 0;
+  white-space: pre-wrap; /* Preserve whitespace/newlines */
+  color: black;
+}
+
+
+strong {
+  color: firebrick;
+}
+
+p {
+  color: black;
+}
