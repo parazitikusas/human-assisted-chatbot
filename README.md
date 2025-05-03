@@ -39,7 +39,18 @@ npm run dev
 
 ### 3. Middleware Backend
 
-A Node.js server. To start:
+#### 🔐 Setting Up the `.env` File
+
+Before running the **Client Backend**, you need to create a `.env` file in the `client-backend` directory to store your OpenAI API key.
+
+1. Navigate to the `client-backend` directory.
+2. Create a file named `.env`.
+3. Add the following line to the file, replacing `custom-key` with your actual OpenAI API key:
+   ```
+   OPENAI_API_KEY="custom-key"
+   ```
+   
+The application is a Node.js server. To start:
 
 ```bash
 cd kodee-middleware
