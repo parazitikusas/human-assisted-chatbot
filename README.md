@@ -7,7 +7,7 @@ The working system consists of **four running applications**:
    > ⚠️ When running this application, make sure to **add appropriate CORS rules** to allow requests from your machine.
 
 2. **Three Applications from This Repository**:
-   - **Client Frontend**
+   - **Client Frontend** [/kodee-client]
    - **Middleware**
-     - **Middleware Backend**
-     - **Middleware Frontend** (for CS Specialists)
+     - **Middleware Backend** [/kodee-middleware]
+     - **Middleware Frontend** (for CS Specialists) [/cs-specialist-ui]
